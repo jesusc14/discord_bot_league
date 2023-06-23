@@ -28,7 +28,7 @@ async def on_message(message):
             activity = response.json()
 
             # Create a formatted message with the activity information
-            activity_message = f"Here's something you can do you lazy ass\n"
+            activity_message = f"Here's something you can do!\n"
             activity_message += f"Activity: {activity['activity']}\n"
             activity_message += f"Type: {activity['type']}\n"
             activity_message += f"Participants: {activity['participants']}\n"
