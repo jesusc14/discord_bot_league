@@ -1,6 +1,7 @@
 import discord
 import os
 import requests
+import config
 
 client = discord.Client(intents=discord.Intents.all())
 
@@ -42,4 +43,4 @@ async def on_message(message):
             print(f"Error: {response.status_code}")
 
 
-client.run("MTExOTY5MzY0MDY1OTM3ODI5Nw.Gk8f7M.t-tWVmPAXGKPxEis7joTW1vyq_ADntOIXqLWAk")
+client.run(config.API_KEY)
